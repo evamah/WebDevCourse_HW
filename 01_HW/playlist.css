@@ -1,0 +1,33 @@
+#main-title {
+    text-align: center;
+    font-family: Arial, sans-serif;
+}
+
+table {
+    width: 80%;
+    margin: 0 auto;
+    border-collapse: collapse;
+    font-size: 18px;
+    border: 1px solid black;
+    text-align: center;
+
+}
+
+th,
+td {
+    border: 1px solid black;
+    text-align: center;
+}
+
+table thead {
+    background: blue;
+}
+
+table thead th {
+    color: #FFFFFF;
+    text-align: center;
+    font-size: 22px;
+    border-collapse: collapse;
+
+    border: 1px solid black;
+}
