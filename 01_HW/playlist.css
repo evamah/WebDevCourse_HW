@@ -31,3 +31,16 @@ table thead th {
 
     border: 1px solid black;
 }
+
+.headerStyle {
+    background-color: blue;
+    color: white;
+}
+
+.markRow:hover {
+    background-color: lightblue;
+    color: darkblue;
+    font-weight: bold;
+    font-size: 40px;
+    cursor: pointer;
+}
