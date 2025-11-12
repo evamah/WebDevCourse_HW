@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+
+<head>
+    <meta charset="UTF-8">
+    <link rel="icon" href="data:,">
+
+
+    <style>
+        .contactTable {
+            border-collapse: collapse;
+            width: 400px;
+        }
+
+        .contactTable td {
+            border: 1px solid black;
+            padding: 8px;
+        }
+
+        .tableHeader {
+            font-weight: bold;
+            text-align: center;
+        }
+
+        input[type="text"],
+        input[type="email"],
+        input[type="number"] {
+            width: 95%;
+            padding: 5px;
+        }
+
+        .messageBox {
+            width: 95%;
+            height: 80px;
+            padding: 5px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <h1>Contact</h1>
+
+    <table class="contactTable">
+        <tr>
+            <td colspan="2" class="tableHeader">Send a Message</td>
+        </tr>
+        <tr>
+            <td>Name:</td>
+            <td><input type="text"></td>
+        </tr>
+        <tr>
+            <td>Email:</td>
+            <td><input type="email"></td>
+        </tr>
+        <tr>
+            <td>Phone:</td>
+            <td><input type="text"></td>
+        </tr>
+        <tr>
+            <td>Subject:</td>
+            <td><input type="text"></td>
+        </tr>
+        <tr>
+            <td>Message:</td>
+            <td><textarea class="messageBox"></textarea></td>
+        </tr>
+        <tr>
+            <td colspan="2" class="tableHeader">
+                <form>
+                    <button onclick="sendAlert()" type="submit">Send Message</button>
+                </form>
+            </td>
+        </tr>
+    </table>
+
+    <script>
+        function sendAlert() {
+            alert("Your message has been sent!");
+        }
+
+    </script>
+
+</body>
+
+</html>
