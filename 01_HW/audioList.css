@@ -1,0 +1,44 @@
+        table {
+            border-collapse: collapse;
+            width: 90%;
+            margin: 20px auto;
+            background-color: lightgray;
+        }
+
+        th,
+        td {
+            border: 1px solid #ccc;
+            text-align: center;
+            padding: 10px;
+            background-color: brightgray;
+        }
+
+        th {
+            background-color: #333;
+            color: white;
+
+        }
+
+        tr:nth-child(even) {
+            background-color: brightgray;
+        }
+
+        audio {
+            width: 200px;
+            border: 2px solid green;
+            border-radius: 8px;
+            padding: 3px;
+        }
+
+        a {
+            color: blue;
+            text-decoration: none;
+        }
+
+        a:hover {
+            text-decoration: underline;
+        }
+
+        img {
+            border-radius: 6px;
+        }
