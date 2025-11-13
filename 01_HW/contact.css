@@ -1,8 +1,10 @@
 h1 {
     color: purple;
+    text-align: center;
 }
 
 .contactTable {
+    margin: 0 auto;
     border-collapse: collapse;
     width: 400px;
     background-color: rgb(178, 204, 225);
@@ -40,4 +42,17 @@ button {
 
 button:hover {
     background-color: purple;
+}
+
+
+
+a {
+    display: block;
+    text-align: center;
+    font-size: 22px;
+    color: blue;
+}
+
+a:hover {
+    text-decoration: underline;
 }

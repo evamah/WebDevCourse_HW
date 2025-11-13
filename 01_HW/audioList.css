@@ -29,3 +29,14 @@
         a {
             color: blue;
         }
+
+        .linkButton {
+            display: block;
+            text-align: center;
+            font-size: 22px;
+            color: blue;
+        }
+
+        .linkButton:hover {
+            text-decoration: underline;
+        }
