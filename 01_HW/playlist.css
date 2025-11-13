@@ -37,10 +37,25 @@ table thead th {
     color: white;
 }
 
+.highlightFirstRow {
+    background-color: lightblue;
+    color: darkblue;
+    font-weight: bold;
+    font-size: 40px;
+}
+
 .markRow:hover {
     background-color: lightblue;
     color: darkblue;
     font-weight: bold;
     font-size: 40px;
     cursor: pointer;
+}
+
+.songLink:link {
+    color: purple;
+}
+
+.songLink:visited {
+    color: red;
 }
