@@ -1,0 +1,43 @@
+h1 {
+    color: purple;
+}
+
+.contactTable {
+    border-collapse: collapse;
+    width: 400px;
+    background-color: rgb(178, 204, 225);
+}
+
+.contactTable td {
+    border: 1px solid black;
+    padding: 8px;
+}
+
+.tableHeader {
+    font-weight: bold;
+    text-align: center;
+    background-color: paleturquoise;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="number"] {
+    width: 95%;
+    padding: 5px;
+}
+
+.messageBox {
+    width: 95%;
+    height: 80px;
+    padding: 5px;
+}
+
+button {
+    background-color: palevioletred;
+    color: white;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: purple;
+}
