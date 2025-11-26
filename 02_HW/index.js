@@ -13,6 +13,11 @@ function pageLoaded() {
     txt2 = document.querySelector('#txt2');
     btn = document.getElementById('btnCalc');
     lblRes = document.getElementById('lblRes');
+
+    // check input
+    txt1.addEventListener("input", () => validateInput(txt1));
+    txt2.addEventListener("input", () => validateInput(txt2));
+
     btn.addEventListener('click', () => {
         calculate();
     });
@@ -20,7 +25,35 @@ function pageLoaded() {
 
 }
 
+
+function validateInput(inputElem) {
+    const isNumber = !isNaN(inputElem.value) && inputElem.value.trim() !== "";
+
+    if (isNumber) {
+        inputElem.classList.add("is-valid");
+        inputElem.classList.remove("is-invalid");
+    } else {
+        inputElem.classList.add("is-invalid");
+        inputElem.classList.remove("is-valid");
+    }
+}
+
+
 function calculate() {
+
+    validateInput(txt1);
+    validateInput(txt2);
+
+    if (txt1.classList.contains("is-invalid") ||
+        txt2.classList.contains("is-invalid")) {
+
+        lblRes.innerText = "Invalid Input";
+        return;
+    }
+
+
+
+
     let num1 = parseInt(txt1.value);
     let num2 = parseInt(txt2.value);
 
@@ -32,19 +65,26 @@ function calculate() {
     if (op === "+") res = num1 + num2;
     else if (op === "-") res = num1 - num2;
     else if (op === "*") res = num1 * num2;
-    else if (op === "/") res = num1 / num2;
+    else if (op === "/") {
+        if (num2 == 0) {
+            res = "invalid input"
+        }
+        else {
+            res = num1 / num2;
+        }
+    }
 
     lblRes.innerText = res;
+
+    print(`${num1} ${op} ${num2} = ${res}`, true);
+
 }
-
-
-
 
 
 
 const btn2 = document.getElementById("btn2");
 btn2.addEventListener("click", () => {
-    print("btn2 clicked :" + btn2.id + "|" + btn2.innerText);
+    print("btn2 clicked :" + btn2.id + "|" + btn2.innerText, true);
 });
 
 
@@ -54,14 +94,22 @@ btn2.addEventListener("click", () => {
 // {
 
 // }
-function print(msg) {
+function print(msg, append = false) {
 
     //--Get TextArea Element Reference
     const ta = document.getElementById("output");
-    //--Write msg to textArea text
-    if (ta) ta.value = msg;
-    //write Log
-    else console.log(msg);
+
+    if (!ta) {
+        console.log(msg);
+        return;
+    }
+
+    if (append) {
+        // add to the current message
+        ta.value += msg + "\n";
+    } else {
+        ta.value = msg + "\n";
+    }
 }
 
 
@@ -109,5 +157,5 @@ function demoNative() {
     out += "\n[Callback] calc(10,20, x+y ) = " + result;
 
     //Print to Log
-    print(out);
+    print(out, true);
 }
