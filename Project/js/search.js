@@ -33,7 +33,7 @@ function getCurrentUser() {
 
 // API key
 const API_KEY = "AIzaSyCLjs9TO-0WmPDhd86n5jiiQAt7v3VN-7c";
-const MAX_RESULTS = 6;
+const MAX_RESULTS = 30;
 
 // Click search button
 searchBtn.addEventListener("click", () => {
