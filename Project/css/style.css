@@ -1,0 +1,47 @@
+body {
+    font-family: Arial, sans-serif;
+    direction: rtl;
+    margin: 0;
+    background-color: #f4f4f4;
+}
+
+.main-header {
+    background-color: #222;
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+
+.container {
+    max-width: 800px;
+    margin: 40px auto;
+    background: white;
+    padding: 30px;
+    border-radius: 8px;
+}
+
+.student-info p {
+    font-size: 18px;
+}
+
+.links {
+    margin-top: 30px;
+}
+
+.auth-links {
+    margin-top: 20px;
+}
+
+.btn {
+    display: inline-block;
+    margin-left: 15px;
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+.btn:hover {
+    background-color: #0056b3;
+}

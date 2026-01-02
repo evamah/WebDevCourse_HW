@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>CLIENT PROJECT</title>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+</head>
+
+<body>
+
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg bg-primary" data-bs-theme="dark" dir="ltr">
+        <div class="container-fluid position-relative">
+
+            <!-- WebDev Page -->
+            <a class="navbar-brand" href="index.html">WEBDEV</a>
+
+            <!-- Center Elements -->
+            <div class="d-flex justify-content-center position-absolute start-50 translate-middle-x" id="mainNavbar">
+                <ul class="navbar-nav flex-row gap-3">
+                    <li class="nav-item">
+                        <a class="nav-link" href="login.html">Sign In</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="register.html">Sign Up</a>
+                    </li>
+                </ul>
+            </div>
+
+            <!-- UserName & picture -->
+            <div class="ms-auto d-flex align-items-center" id="userArea" style="display:none;">
+                <span class="text-white me-2" id="usernameDisplay"></span>
+                <img id="userImage" src="" alt="User" class="rounded-circle" width="40" height="40">
+            </div>
+
+        </div>
+    </nav>
+
+
+    <!-- Main Page -->
+    <div class="min-vh-100 d-flex justify-content-center align-items-center">
+        <div class="card border-primary text-center p-3 shadow" style="width: 28rem;">
+
+
+            <h3 class="card-header">WEB CLIENT PROJECT</h3>
+
+            <p class="card-text"><strong>Student Name:</strong> Eva Mahmood</p>
+            <p class="card-text"><strong>ID:</strong> 214985509</p>
+
+            <a href="https://github.com/evamah/WebDevCourse_HW.git" target="_blank" class="btn btn-info btn-lg mt-3">
+                GitHub Live Page
+            </a>
+
+        </div>
+
+
+
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="js/auth.js"></script>
+
+</body>
+
+
+</html>
